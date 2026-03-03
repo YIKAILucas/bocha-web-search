@@ -1,6 +1,6 @@
 ---
 name: bocha-web-search
-description: 统一封装博查（Bocha）全系搜索接口（Web Search / AI Search / Agent Search / Reranker），使用 curl 调用并支持标准参数与原始 JSON 透传。用户提到“博查搜索/联网搜索/AI 搜索/Agent 搜索/重排/rerank/事实核查/行业研报检索”时使用。
+description: 统一封装博查（Bocha）全系搜索接口（Web Search / AI Search / Agent Search / Reranker），使用 Node.js 脚本调用并支持标准参数与原始 JSON 透传。用户提到“博查搜索/联网搜索/AI 搜索/Agent 搜索/重排/rerank/事实核查/行业研报检索”时使用。
 ---
 
 # bocha-web-search
@@ -64,7 +64,7 @@ bash scripts/bocha.sh rerank --query "中国最火app" --raw-json '{"documents":
 - `--language` / `--region` / `--site`：语言、地区、站点过滤（若接口支持）
 - `--raw-json`：原始 JSON 透传（用于覆盖/补充高级参数）
 - `--timeout`：请求超时秒数（默认 30）
-- `--pretty`：若本机安装 `jq`，格式化输出
+- `--pretty`：Node 端 JSON 美化输出（无需 `jq`）
 
 ## 输出规则
 
